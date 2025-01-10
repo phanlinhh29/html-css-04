@@ -53,9 +53,9 @@ a {
 }
 
 .btn--primary {
-    color: #fff;
-    background: var(--primary-color);
-    border: var(--primary-color)
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border: var(--primary-color) !important;
 }
 
 
@@ -901,6 +901,10 @@ button {
     ;
 }
 
+.price__container {
+    width: 994px;
+}
+
 .price-top {
     text-align: center;
 }
@@ -962,4 +966,230 @@ button {
 .price__switch-input:not(:checked)+.price__switch-lable .price__switch-value:nth-of-type(2),
 .price__switch-input:checked+.price__switch-lable .price__switch-value:nth-of-type(1) {
     color: var(--primary-color)
+}
+
+.price__switch-inner {
+    position: relative
+}
+
+.price__sale {
+    position: absolute;
+    top: -10px;
+    right: -110px;
+    width: 86px;
+    height: 36px;
+}
+
+.price__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+    margin-top: 56px;
+}
+
+.price-item {
+    padding: 30px 28px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.price-item--active {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06)
+}
+
+.price-item__type {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--primary-color)
+}
+
+.price-item__heading {
+    margin: 8px 0 24px;
+    color: #3F4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1
+}
+
+.price-item__cost {
+
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    color: #000958;
+}
+
+.price-item__btn {
+    margin-top: 22px;
+    --height: 44px;
+    width: 100%;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.60);
+    background-color: transparent;
+    color: #FF5B2E;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.price-item__list {
+    margin-top: 24px;
+}
+
+.price-item__item {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem, ;
+    font-weight: 400;
+    line-height: 1
+}
+
+.price-item__item::before {
+    margin-right: 12px;
+    content: url(../assets/icons/price-check.svg);
+
+}
+
+/* review */
+.review {
+    padding: 52px 0;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+
+.review__control {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    background-color: transparent;
+    color: var(--primary-color)
+}
+
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review__control:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.review__content {
+
+    overflow: hidden;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+    width: 100%;
+
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item__media {
+    position: relative;
+    width: 274px;
+    border-radius: 137px;
+}
+
+.review-item__media::after {
+    position: absolute;
+    content: "";
+    height: 82%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: inherit;
+    background: #FFDA54;
+
+
+}
+
+.review-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: inherit;
+
+}
+
+
+.review-item__content {
+    margin-top: 87px;
+}
+
+.review-item__quote {
+    width: 553px;
+    margin: 24px 0 34px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.review-item__author {
+    display: flex;
+    align-items: center;
+    color: #282828;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1
+}
+
+.review-item__author::before {
+    margin-right: 8px;
+    content: "";
+    width: 20px;
+    height: 2px;
+    border-radius: 99px;
+    background: #000;
+
+
+}
+
+.review__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    column-gap: 8px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+
+}
+
+.review__dot:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.review__dot--active {
+    width: 24px;
+    background-color: var(--primary-color);
+
 }

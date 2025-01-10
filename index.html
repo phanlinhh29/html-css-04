@@ -382,7 +382,7 @@
     <!-- price -->
 
     <section class="price">
-        <div class="container">
+        <div class="container price__container">
             <div class="price-top">
                 <h2 class="heading1 price__heading">The Best Choice</h2>
                 <p class="desc1 price-top__desc">
@@ -394,12 +394,13 @@
                     <div class="price__switch-inner">
                         <!-- switch -->
                         <div class="price__switch">
-                            <input type="checkbox" name="" id="price-switch" class="price__switch-input" />
-                            <lable for="price-switch" class="price__switch-lable">
+                            <input type="checkbox" name="" id="price-switch" class="price__switch-input" checked
+                                hidden />
+                            <label for="price-switch" class="price__switch-lable">
 
                                 <span class="price__switch-value"> Monthly</span>
                                 <span class="price__switch-value">Yearly</span>
-                            </lable>
+                            </label>
 
 
                         </div>
@@ -410,8 +411,190 @@
 
                 </div>
             </div>
+            <div class="price__list">
+                <!-- item1 -->
+
+                <article class="price-item">
+                    <p class="price-item__type">Basic</p>
+                    <h3 class="price-item__heading">Day care
+                    </h3>
+                    <p class="price-item__cost">$150</p>
+                    <button class="btn price-item__btn ">Purchase Now</button>
+                    <ul class="price-item__list">
+                        <li class="price-item__item">Single room</li>
+                        <li class="price-item__item">Socialist Exercise</li>
+                        <li class="price-item__item">Custom Meals</li>
+                        <li class="price-item__item">Spa and Grooming</li>
+                        <li class="price-item__item">Excercise 2x</li>
+                        <li class="price-item__item">Custom Meals</li>
+                        <li class="price-item__item">Grooming 2x</li>
+                    </ul>
+                </article>
+                <!-- item2 -->
+
+                <article class="price-item price-item--active">
+                    <p class="price-item__type">Exclusive</p>
+                    <h3 class="price-item__heading">2X Care
+                    </h3>
+                    <p class="price-item__cost">$199</p>
+                    <button class="btn btn--primary price-item__btn ">Purchase Now</button>
+                    <ul class="price-item__list">
+                        <li class="price-item__item">Single room</li>
+                        <li class="price-item__item">Socialist Exercise</li>
+                        <li class="price-item__item">Custom Meals</li>
+                        <li class="price-item__item">Spa and Grooming</li>
+                        <li class="price-item__item">Excercise 2x</li>
+                        <li class="price-item__item">Custom Meals</li>
+                        <li class="price-item__item">Grooming 2x</li>
+                    </ul>
+                </article> <!-- item3 -->
+
+                <article class="price-item">
+                    <p class="price-item__type">Platinum</p>
+                    <h3 class="price-item__heading">4X Care
+                    </h3>
+                    <p class="price-item__cost">$299</p>
+                    <button class="btn price-item__btn ">Purchase Now</button>
+                    <ul class="price-item__list">
+                        <li class="price-item__item">Single room</li>
+                        <li class="price-item__item">Socialist Exercise</li>
+                        <li class="price-item__item">Custom Meals</li>
+                        <li class="price-item__item">Spa and Grooming</li>
+                        <li class="price-item__item">Excercise 2x</li>
+                        <li class="price-item__item">Custom Meals</li>
+                        <li class="price-item__item">Grooming 2x</li>
+                    </ul>
+                </article>
+            </div>
         </div>
     </section>
+
+
+    <!-- review -->
+    <div class="review">
+        <div class="container">
+            <div class="review__inner">
+                <!-- review previous -->
+                <button class="review__control">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.875 9.99854H3.125" stroke="Currentcolor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M8.75 4.37354L3.125 9.99854L8.75 15.6235" stroke="Currentcolor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+
+                <!-- review-content -->
+                <div class="review__content">
+                    <!-- review-list -->
+                    <div class="review__list">
+                        <!-- review item 1 -->
+                        <article class="review-item">
+
+                            <figure class="review-item__media">
+                                <img src="./assets/img/review-img.png" alt="" class="review-item__img">
+                            </figure>
+
+                            <section class="review-item__content">
+                                <h2 class=" heading1 review-item__heading">Our Reviews</h2>
+                                <blockquote class="review-item__quote">“It was very comforting to recieve a text and
+                                    pics each day about our pets and how they were doing. It was also nice that my pets
+                                    were in the comfortable environment of their own home and received playfull
+                                    attention from our pet sitters as well. Thanks so much!”
+                                </blockquote>
+
+                                <p class="review-item__author">Karla Deras</p>
+
+                            </section>
+
+                        </article>
+                        <!-- review item 2 -->
+                        <article class="review-item">
+
+                            <figure class="review-item__media">
+                                <img src="./assets/img/review-img.png" alt="" class="review-item__img">
+                            </figure>
+
+                            <section class="review-item__content">
+                                <h2 class=" heading1 review-item__heading">Our Reviews</h2>
+                                <blockquote class="review-item__quote">“It was very comforting to recieve a text and
+                                    pics each day about our pets and how they were doing. It was also nice that my pets
+                                    were in the comfortable environment of their own home and received playfull
+                                    attention from our pet sitters as well. Thanks so much!”
+                                </blockquote>
+
+                                <p class="review-item__author">Karla Deras</p>
+
+                            </section>
+
+                        </article>
+                        <!-- review item 3 -->
+                        <article class="review-item">
+
+                            <figure class="review-item__media">
+                                <img src="./assets/img/review-img.png" alt="" class="review-item__img">
+                            </figure>
+
+                            <section class="review-item__content">
+                                <h2 class=" heading1 review-item__heading">Our Reviews</h2>
+                                <blockquote class="review-item__quote">“It was very comforting to recieve a text and
+                                    pics each day about our pets and how they were doing. It was also nice that my pets
+                                    were in the comfortable environment of their own home and received playfull
+                                    attention from our pet sitters as well. Thanks so much!”
+                                </blockquote>
+
+                                <p class="review-item__author">Karla Deras</p>
+
+                            </section>
+
+                        </article>
+                        <!-- review item 4-->
+                        <article class="review-item">
+
+                            <figure class="review-item__media">
+                                <img src="./assets/img/review-img.png" alt="" class="review-item__img">
+                            </figure>
+
+                            <section class="review-item__content">
+                                <h2 class=" heading1 review-item__heading">Our Reviews</h2>
+                                <blockquote class="review-item__quote">“It was very comforting to recieve a text and
+                                    pics each day about our pets and how they were doing. It was also nice that my pets
+                                    were in the comfortable environment of their own home and received playfull
+                                    attention from our pet sitters as well. Thanks so much!”
+                                </blockquote>
+
+                                <p class="review-item__author">Karla Deras</p>
+
+                            </section>
+
+                        </article>
+
+                    </div>
+                    <!-- review-dots -->
+                    <div class="review__dots">
+                        <div class="review__dot review__dot--active"></div>
+                        <div class="review__dot"></div>
+                        <div class="review__dot"></div>
+                        <div class="review__dot"></div>
+                    </div>
+
+                </div>
+
+                <!-- Review next -->
+                <button class="review__control">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.125 10.9985H16.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M11.25 5.37354L16.875 10.9985L11.25 16.6235" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
